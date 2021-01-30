@@ -26,7 +26,7 @@ public class PlayerMovementShip : MonoBehaviour
             force = transform.up * velocityForwardShip * Time.deltaTime;
             rb2D.angularVelocity = 0;
 
-            rb2D.velocity = force;
+            rb2D.velocity += force;
 
 
         } else if (Input.GetKey(KeyCode.S)) {
@@ -44,25 +44,24 @@ public class PlayerMovementShip : MonoBehaviour
         }
 
         //stop
+        float velocityStop = Time.deltaTime * (velocityForwardShip / 10);
+
         if (rb2D.velocity.x > 0)
         {
-            rb2D.velocity += new Vector2(-Time.deltaTime, 0);
+            rb2D.velocity += new Vector2(-velocityStop, 0);
         }
         else if (rb2D.velocity.x < 0)
         {
-            rb2D.velocity += new Vector2(Time.deltaTime, 0);
+            rb2D.velocity += new Vector2(velocityStop, 0);
         }
 
         if (rb2D.velocity.y > 0)
         {
-            rb2D.velocity += new Vector2(0,-Time.deltaTime);
+            rb2D.velocity += new Vector2(0,-velocityStop);
         } else if (rb2D.velocity.y < 0)
         {
-            rb2D.velocity += new Vector2(0, Time.deltaTime);
+            rb2D.velocity += new Vector2(0, velocityStop);
         }
-
-
-        print(rb2D.velocity);
 
     }
 }
