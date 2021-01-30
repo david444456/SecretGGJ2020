@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: 0279b80c773284346a7a7ad0b89d3e94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3786422932411902546
+    second: Grass2_0
+  - first:
+      213: 5906148160138710115
+    second: Grass2_1
+  - first:
+      213: -8112807252533621699
+    second: Grass2_2
+  - first:
+      213: 7982536976280665477
+    second: Grass2_3
+  - first:
+      213: -980495913971496672
+    second: Grass2_4
+  - first:
+      213: -3405271680835044754
+    second: Grass2_5
+  - first:
+      213: 2444603201627329832
+    second: Grass2_6
+  - first:
+      213: 2419761116590735412
+    second: Grass2_7
+  - first:
+      213: -8322877456057203704
+    second: Grass2_8
+  - first:
+      213: -861039926259934713
+    second: Grass2_9
+  - first:
+      213: 6783945806638224504
+    second: Grass2_10
+  - first:
+      213: 1925832452988673161
+    second: Grass2_11
+  - first:
+      213: -6378783735989961422
+    second: Grass2_12
+  - first:
+      213: -1389160711960728528
+    second: Grass2_13
+  - first:
+      213: 8788145464183945619
+    second: Grass2_14
+  - first:
+      213: -5174717824579445530
+    second: Grass2_15
+  - first:
+      213: -1638030316284540842
+    second: Grass2_16
+  - first:
+      213: -2941621427321490244
+    second: Grass2_17
+  - first:
+      213: -8742348322666464285
+    second: Grass2_18
+  - first:
+      213: -2911852570386111998
+    second: Grass2_19
+  - first:
+      213: -3617570202268715975
+    second: Grass2_20
+  - first:
+      213: 9184239077610228794
+    second: Grass2_21
+  - first:
+      213: 6114645519005844469
+    second: Grass2_22
+  - first:
+      213: 6391610842935272950
+    second: Grass2_23
+  - first:
+      213: -3701191427015622641
+    second: Grass2_24
+  - first:
+      213: -5481890123430058959
+    second: Grass2_25
+  - first:
+      213: -1887789602432064605
+    second: Grass2_26
+  - first:
+      213: -3818154931461150461
+    second: Grass2_27
+  - first:
+      213: -6517772603035623937
+    second: Grass2_28
+  - first:
+      213: 809977987392766467
+    second: Grass2_29
+  - first:
+      213: 7159865449423737782
+    second: Grass2_30
+  - first:
+      213: -8342947238798652681
+    second: Grass2_31
+  - first:
+      213: 452063703140637458
+    second: Grass2_32
+  - first:
+      213: 3410974700534666132
+    second: Grass2_33
+  - first:
+      213: -3228675969207329528
+    second: Grass2_34
+  - first:
+      213: 1836629938069321316
+    second: Grass2_35
+  - first:
+      213: 3665578865012024352
+    second: Grass2_36
+  - first:
+      213: -349072540176259982
+    second: Grass2_37
+  - first:
+      213: 3361253731915363870
+    second: Grass2_38
+  - first:
+      213: -1671602369742406867
+    second: Grass2_39
+  - first:
+      213: 135714191043267143
+    second: Grass2_40
+  - first:
+      213: 5988050011911312647
+    second: Grass2_41
+  - first:
+      213: -721464509830267381
+    second: Grass2_42
+  - first:
+      213: 8445001447449401719
+    second: Grass2_43
+  - first:
+      213: -8958520432545139449
+    second: Grass2_44
+  - first:
+      213: 3257233215097018939
+    second: Grass2_45
+  - first:
+      213: 872813556731082328
+    second: Grass2_46
+  - first:
+      213: 2844704914579314184
+    second: Grass2_47
+  - first:
+      213: -5782079547566907456
+    second: Grass2_48
+  - first:
+      213: -3138740493404339494
+    second: Grass2_49
+  - first:
+      213: -7132696061705716176
+    second: Grass2_50
+  - first:
+      213: 5630907744014317590
+    second: Grass2_51
+  - first:
+      213: 1503508107588622009
+    second: Grass2_52
+  - first:
+      213: 3183939623588464507
+    second: Grass2_53
+  - first:
+      213: 3057767219239013642
+    second: Grass2_54
+  - first:
+      213: -2974673502078877196
+    second: Grass2_55
+  - first:
+      213: -4415847704154527242
+    second: Grass2_56
+  - first:
+      213: -5512615783941697218
+    second: Grass2_57
+  - first:
+      213: -4549398997926580942
+    second: Grass2_58
+  - first:
+      213: 413160716109372337
+    second: Grass2_59
+  - first:
+      213: -4817028397692695374
+    second: Grass2_60
+  - first:
+      213: -7407818507810735140
+    second: Grass2_61
+  - first:
+      213: 1378412067044114768
+    second: Grass2_62
+  - first:
+      213: 1916594761872426419
+    second: Grass2_63
+  - first:
+      213: 4867017254842208372
+    second: Grass2_64
+  - first:
+      213: -5218811737712284558
+    second: Grass2_65
+  - first:
+      213: -4036637115015306148
+    second: Grass2_66
+  - first:
+      213: 7478588209411703302
+    second: Grass2_67
+  - first:
+      213: -4786361109119538664
+    second: Grass2_68
+  - first:
+      213: -4587691114733220086
+    second: Grass2_69
+  - first:
+      213: 1291695923660596987
+    second: Grass2_70
+  - first:
+      213: -2369034679013308255
+    second: Grass2_71
+  - first:
+      213: 2734894285297718435
+    second: Grass2_72
+  - first:
+      213: 4162431118383717333
+    second: Grass2_73
+  - first:
+      213: 6650189599741342133
+    second: Grass2_74
+  - first:
+      213: -7449283345460770010
+    second: Grass2_75
+  - first:
+      213: -5943051181082708797
+    second: Grass2_76
+  - first:
+      213: 3645989699131490867
+    second: Grass2_77
+  - first:
+      213: 3951504414210821280
+    second: Grass2_78
+  - first:
+      213: 439694514244250466
+    second: Grass2_79
+  - first:
+      213: -6510536682834297608
+    second: Grass2_80
+  - first:
+      213: -514731349197596171
+    second: Grass2_81
+  - first:
+      213: 1978751066371350972
+    second: Grass2_82
+  - first:
+      213: 6342587227249817358
+    second: Grass2_83
+  - first:
+      213: -4332975968879535243
+    second: Grass2_84
+  - first:
+      213: -7039005630277353190
+    second: Grass2_85
+  - first:
+      213: 4316892465577956412
+    second: Grass2_86
+  - first:
+      213: -1854172940582732989
+    second: Grass2_87
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 427
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25aedcf78931c8430800000000000000
+      internalID: 3786422932411902546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 427
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c05e3a57ad6f150800000000000000
+      internalID: 5906148160138710115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 427
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c458d89c4896f80800000000000000
+      internalID: -8112807252533621699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 214
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d31ad261ba7ce60800000000000000
+      internalID: 7982536976280665477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2_4
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 214
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029c10049249462f0800000000000000
+      internalID: -980495913971496672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2_5
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 214
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a312cb27b0eb0d0800000000000000
+      internalID: -3405271680835044754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82597c9e8a9fce120800000000000000
+      internalID: 2444603201627329832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2_7
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43081b34ae7b49120800000000000000
+      internalID: 2419761116590735412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2_8
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8048a9adc033f7c80800000000000000
+      internalID: -8322877456057203704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
