@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f87f9247a0237b843af7f623023fd972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxValueRandomValueCoin: 2900
 --- !u!212 &8923288186965339935
 SpriteRenderer:
   m_ObjectHideFlags: 0
