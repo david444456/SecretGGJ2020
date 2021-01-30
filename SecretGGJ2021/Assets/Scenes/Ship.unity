@@ -179,9 +179,10 @@ GameObject:
   - component: {fileID: 443326078}
   - component: {fileID: 443326077}
   - component: {fileID: 443326079}
+  - component: {fileID: 443326080}
   m_Layer: 0
-  m_Name: Island (2)
-  m_TagString: Island
+  m_Name: Bomb
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,6 +268,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
+--- !u!114 &443326080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443326076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4944a7f99fe42e43b208e526c351342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &453901656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,6 +2709,10 @@ PrefabInstance:
     - target: {fileID: 8704452893136099333, guid: f286dd5103df42743b8cd47d235e884e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704452893136099353, guid: f286dd5103df42743b8cd47d235e884e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8704452893136099358, guid: f286dd5103df42743b8cd47d235e884e, type: 3}
       propertyPath: m_Name

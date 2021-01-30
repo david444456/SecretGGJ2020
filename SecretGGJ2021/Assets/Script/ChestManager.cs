@@ -7,10 +7,15 @@ public class ChestManager : MonoBehaviour
 {
     [SerializeField] int maxValueRandomValueCoin = 0;
 
+    private UnityEngine.Object chestRef;
+
+    Vector3 startPos;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        startPos = transform.position;
+        chestRef = Resources.Load("Chest");
     }
 
     /* Estaba antes
@@ -27,15 +32,23 @@ public class ChestManager : MonoBehaviour
     }
     */
 
-    private void OnTriggerEnter2D (Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Island"))
         {
+            Respawn();
             Destroy(gameObject);
         }
         else if (collision.CompareTag("Player"))
         {
+            Respawn();
             Destroy(gameObject);
         }
+    }
+
+    void Respawn()
+    {
+        GameObject newChest = (GameObject)Instantiate(chestRef);
+        newChest.transform.position = new Vector3(UnityEngine.Random.Range(0, 10), UnityEngine.Random.Range(0, 10), UnityEngine.Random.Range(0, 10));
     }
 }
