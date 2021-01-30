@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class DestroyShip : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    int points;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.CompareTag("Island"))
+        {
+            Destroy(gameObject);
+        }
+        else if (collision.CompareTag("Chest"))
+        {
+            points++;
+        }
     }
 }
