@@ -13,6 +13,7 @@ public class ChestManager : MonoBehaviour
 
     }
 
+    /* Estaba antes
     private void OnTriggerEnter2D  (Collider2D other)
     {
         if (other.tag == "Player") {
@@ -22,6 +23,19 @@ public class ChestManager : MonoBehaviour
             //generar un efecto de particulas al agarrar el cofre
 
             Destroy(gameObject, 0.5f);
+        }
+    }
+    */
+
+    private void OnTriggerEnter2D (Collider2D collision)
+    {
+        if (collision.CompareTag("Island"))
+        {
+            Destroy(gameObject);
+        }
+        else if (collision.CompareTag("Player"))
+        {
+            Destroy(gameObject);
         }
     }
 }
