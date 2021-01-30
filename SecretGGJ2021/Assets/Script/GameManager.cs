@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Ship
@@ -17,6 +18,8 @@ namespace Ship
 
 
         private int actualCoins = 0;
+
+        
 
         void Start()
         {
@@ -35,6 +38,10 @@ namespace Ship
             if (coinsToWin < actualCoins) {
                 print("Ganaste crack sos un orgullo");
             }
+        }
+
+        public void Restart() {
+            SceneManager.LoadScene(1);
         }
     }
 }

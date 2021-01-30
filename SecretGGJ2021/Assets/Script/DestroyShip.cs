@@ -4,15 +4,42 @@ using UnityEngine;
 
 public class DestroyShip : MonoBehaviour
 {
-
+    [SerializeField] GameObject UIRestart;
     [SerializeField] ParticleSystem particleSystemDead;
+    [SerializeField] ParticleSystem particleSystemWater;
+    [SerializeField] ParticleSystem particleSystemFire;
+    [SerializeField] AudioSource audioSource;
+
+    bool oneDead = false;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Build")
+        if ((other.gameObject.tag == "Enemy" || other.gameObject.tag == "Build") && !oneDead)
         {
+            oneDead = true;
+
             particleSystemDead.Play();
-            Destroy(gameObject, 0.3f);
+
+            //elegir random un efecto de sonido
+            audioSource.Play();
+
+            StartCoroutine(FinishLevelDie());
+
+            CycleLifePlayer.cycleLifePlayer.newPositionDiePlayer(transform.position);
+
+            GetComponent<Animator>().SetBool("Die", true);
         }
+    }
+
+    IEnumerator FinishLevelDie() {
+        yield return new WaitForSeconds(0.3f);
+        UIRestart.SetActive(true);
+
+        particleSystemFire.Play();
+        particleSystemWater.Stop();
+
+        //change 
+        GetComponent<PlayerMovementShip>().changeMove();
+        GetComponent<Rigidbody2D>().angularVelocity = 0;
     }
 }

@@ -10,6 +10,7 @@ public class MinimapMan : MonoBehaviour
     [SerializeField] FollowPlayer followPlayer;
     [SerializeField] GameObject PlayerGameObject;
     [SerializeField] float orthographicSizeMainCamera = 20f;
+    [SerializeField] float orthographicDrawMainCamera = 15f;
 
     public Draw_ DrawScript;
 
@@ -35,7 +36,6 @@ public class MinimapMan : MonoBehaviour
     }
     public IEnumerator MostrarTesoro()
     {
-        print("Hola");
 
         DrawScript.enabled = false;
         PlayerGameObject.SetActive(false);
@@ -52,13 +52,14 @@ public class MinimapMan : MonoBehaviour
 
         //Tiempo dibujando en el mapa//
         textAyuda.text = " Dibuja todo lo que te acuerdes!! ";
-        MainCamara.orthographicSize = orthographicDefaultCamera; //default size
+        MainCamara.orthographicSize = orthographicDrawMainCamera; 
 
         MainCamara.transform.position = MapPosition;
         DrawScript.enabled = true;
         yield return new WaitForSeconds(TiempoDibujando);
 
         //vuelvo a jugar
+        MainCamara.orthographicSize = orthographicDefaultCamera;//default size
         DrawScript.enabled = false;
         MiniMap.SetActive(true);
         MainCamara.transform.position = StartingGame;
