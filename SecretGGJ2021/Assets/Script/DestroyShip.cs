@@ -21,7 +21,7 @@ public class DestroyShip : MonoBehaviour
             particleSystemDead.Play();
 
             //elegir random un efecto de sonido
-            audioSource.Play();
+            GetComponent<RandomSound>().changeSoundRandom();
 
             StartCoroutine(FinishLevelDie());
 
