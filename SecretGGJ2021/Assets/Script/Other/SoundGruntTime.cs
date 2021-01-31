@@ -13,6 +13,7 @@ public class SoundGruntTime : MonoBehaviour
     void Start()
     {
         randomSound = GetComponent<RandomSound>();
+        StartCoroutine(repeatSoundEverySecond());
     }
 
     IEnumerator repeatSoundEverySecond() {

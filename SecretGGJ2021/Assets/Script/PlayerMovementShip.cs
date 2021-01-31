@@ -8,6 +8,7 @@ public class PlayerMovementShip : MonoBehaviour
     [SerializeField] float velocityForwardShip = 5;
     [SerializeField] float rotateVelocityShip = 0.5f;
     [SerializeField] AudioSource audioSource;
+    [SerializeField] GameObject CanvasGameObject;
 
     Rigidbody2D rb2D;
     Vector2 force;
@@ -24,6 +25,8 @@ public class PlayerMovementShip : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         CycleLifePlayer.cycleLifePlayer.GenerateAllShipDie();
+
+        CanvasGameObject.SetActive(true);
     }
 
     // Update is called once per frame

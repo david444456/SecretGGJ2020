@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 namespace Ship
 {
     public class GameManager : MonoBehaviour
     {
+        public UnityEvent IWIN;
+
         public static GameManager gameManager;
 
         [SerializeField] int minimumValueCoins;
@@ -38,8 +41,7 @@ namespace Ship
             //win
             if (coinsToWin < actualCoins) {
                 gameObjectTextWin.SetActive(true);
-                textWin.text = "Ganaste crack sos un orgullo";
-                print("Ganaste crack sos un orgullo");
+                IWIN.Invoke();
             }
         }
 

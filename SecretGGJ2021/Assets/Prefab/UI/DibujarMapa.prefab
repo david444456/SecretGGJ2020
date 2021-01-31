@@ -299,8 +299,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3943582072837885643, guid: 9ccb1a32a5d68854c910f9eb3ae2257a, type: 3}
+      propertyPath: Tesoro.x
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943582072837885643, guid: 9ccb1a32a5d68854c910f9eb3ae2257a, type: 3}
       propertyPath: Tesoro.y
-      value: 0
+      value: 56.7
       objectReference: {fileID: 0}
     - target: {fileID: 3943582072837885643, guid: 9ccb1a32a5d68854c910f9eb3ae2257a, type: 3}
       propertyPath: Tesoro.z
