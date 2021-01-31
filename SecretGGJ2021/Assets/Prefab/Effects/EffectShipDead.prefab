@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8223028243712672839}
   - component: {fileID: 7410603902255612594}
   - component: {fileID: 3569404465989238851}
+  - component: {fileID: 863332561887467233}
   m_Layer: 0
   m_Name: EffectShipDead
   m_TagString: Untagged
@@ -4788,7 +4789,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -4825,7 +4826,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77a86863725e9f34aa28fd48fbe7812b, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -4910,3 +4911,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &863332561887467233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15866491697755607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d408adfef473ca04da87e7a2f3186b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RuidoFuego: {fileID: 3569404465989238851}
+  Fuego: {fileID: 15866491697755607}
+  EmpiezaElFuego: 15
