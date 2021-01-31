@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Ship
@@ -14,9 +15,12 @@ namespace Ship
 
         [Header("UI")]
         [SerializeField] Text textCoin;
-
+        [SerializeField] GameObject gameObjectTextWin;
+        [SerializeField] Text textWin;
 
         private int actualCoins = 0;
+
+        
 
         void Start()
         {
@@ -33,8 +37,14 @@ namespace Ship
 
             //win
             if (coinsToWin < actualCoins) {
+                gameObjectTextWin.SetActive(true);
+                textWin.text = "Ganaste crack sos un orgullo";
                 print("Ganaste crack sos un orgullo");
             }
+        }
+
+        public void Restart() {
+            SceneManager.LoadScene(1);
         }
     }
 }
