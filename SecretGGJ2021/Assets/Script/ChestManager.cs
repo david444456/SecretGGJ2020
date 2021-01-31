@@ -6,6 +6,11 @@ using Ship;
 public class ChestManager : MonoBehaviour
 {
     [SerializeField] int maxValueRandomValueCoin = 0;
+    [SerializeField] ParticleSystem particleSystemCoin;
+    [SerializeField] AudioSource audioSource;
+
+    Animator animator;
+    bool reclaimedChest;
 
     private UnityEngine.Object chestRef;
 
@@ -14,26 +19,28 @@ public class ChestManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         startPos = transform.position;
         chestRef = Resources.Load("Chest");
     }
 
-    /* Estaba antes
-    private void OnTriggerEnter2D  (Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.tag == "Player") {
+        if (collision.tag == "Player" && !reclaimedChest && !collision.GetComponent<DestroyShip>().Dead)
+        {
             //un valor aleatorio entre el minimo del game manager y el maximo dado en el cofre
             GameManager.gameManager.AugmentValueCoins(Random.Range(GameManager.gameManager.GetMinimunValueOfRandomCoin(), maxValueRandomValueCoin));
 
             //generar un efecto de particulas al agarrar el cofre
+            particleSystemCoin.Play();
+            audioSource.Play();
+            reclaimedChest = true;
 
-            Destroy(gameObject, 0.5f);
+            animator.SetBool("Die", true);
+
         }
-    }
-    */
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
         if (collision.CompareTag("Island"))
         {
             Respawn();

@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Chest
-  - Island
-  - Bomb
+  - Enemy
+  - Build
   layers:
   - Default
   - TransparentFX

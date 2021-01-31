@@ -168,23 +168,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &399233428 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 959855411747148160, guid: 783029ba4b3b8224586ef96eedcb8303, type: 3}
-  m_PrefabInstance: {fileID: 959855412080313995}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &399233430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399233428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4852b7a75cb5c0e4ea80c7f990455bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &443326076
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,10 +179,9 @@ GameObject:
   - component: {fileID: 443326078}
   - component: {fileID: 443326077}
   - component: {fileID: 443326079}
-  - component: {fileID: 443326080}
   m_Layer: 0
-  m_Name: Bomb
-  m_TagString: Island
+  m_Name: Obs (2)
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,24 +261,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
---- !u!114 &443326080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443326076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4944a7f99fe42e43b208e526c351342, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &453901656
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,7 +280,7 @@ GameObject:
   - component: {fileID: 453901658}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Untagged
+  m_TagString: Build
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1316,7 +1286,7 @@ GameObject:
   - component: {fileID: 592378159}
   - component: {fileID: 592378161}
   m_Layer: 0
-  m_Name: BaseWater
+  m_Name: BaseIsland
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2339,7 +2309,7 @@ GameObject:
   - component: {fileID: 931225409}
   m_Layer: 0
   m_Name: Obs (1)
-  m_TagString: Island
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2419,7 +2389,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2504,7 +2474,7 @@ GameObject:
   - component: {fileID: 1921612799}
   m_Layer: 0
   m_Name: Obs
-  m_TagString: Island
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2584,7 +2554,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2597,13 +2567,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 959855410553125482, guid: 783029ba4b3b8224586ef96eedcb8303, type: 3}
-      propertyPath: m_TagString
-      value: Chest
-      objectReference: {fileID: 0}
-    - target: {fileID: 959855411747148167, guid: 783029ba4b3b8224586ef96eedcb8303, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+    - target: {fileID: 431424136, guid: 783029ba4b3b8224586ef96eedcb8303, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7195569088500728683, guid: 783029ba4b3b8224586ef96eedcb8303, type: 3}
       propertyPath: m_RootOrder
@@ -2652,10 +2618,6 @@ PrefabInstance:
     - target: {fileID: 7880291970244216257, guid: 783029ba4b3b8224586ef96eedcb8303, type: 3}
       propertyPath: m_Name
       value: Core
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880291970244216257, guid: 783029ba4b3b8224586ef96eedcb8303, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783029ba4b3b8224586ef96eedcb8303, type: 3}
