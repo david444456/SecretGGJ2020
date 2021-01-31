@@ -48,6 +48,7 @@ MonoBehaviour:
   shipPrefabDie: {fileID: 1713475036223111561, guid: 2b391f8cee48a9844b8357a5cedcfd78, type: 3}
   chestPrefab: {fileID: 8923288186965339933, guid: 8c6432d1ff6e5e44e8d1affa333ad301, type: 3}
   audioClip: {fileID: 8300000, guid: 4db05bcdb64d0134d8068bd20a7d07a3, type: 3}
+  audioClipWin: {fileID: 8300000, guid: a43fbe481fe47834799ef60d176334f1, type: 3}
 --- !u!82 &1645278777
 AudioSource:
   m_ObjectHideFlags: 0

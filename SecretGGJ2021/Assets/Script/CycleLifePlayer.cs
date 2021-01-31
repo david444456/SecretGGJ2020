@@ -12,6 +12,7 @@ public class CycleLifePlayer : MonoBehaviour
     [SerializeField] GameObject shipPrefabDie;
     [SerializeField] GameObject chestPrefab;
     [SerializeField] AudioClip audioClip;
+    [SerializeField] AudioClip audioClipWin;
 
     List<Vector2> positionsDiePlayer = new List<Vector2>();
 
@@ -44,6 +45,11 @@ public class CycleLifePlayer : MonoBehaviour
 
     public void changeMusicThemeMenu() {
         GetComponent<AudioSource>().clip = audioClip;
+        GetComponent<AudioSource>().Play();
+    }
+
+    public void changeMusicWin() {
+        GetComponent<AudioSource>().clip = audioClipWin;
         GetComponent<AudioSource>().Play();
     }
 }
