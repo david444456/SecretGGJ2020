@@ -9,4 +9,12 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void Credits() {
+        SceneManager.LoadScene(2);
+    }
+
+    public void sceneMenu() {
+        SceneManager.LoadScene(0);
+    }
 }
