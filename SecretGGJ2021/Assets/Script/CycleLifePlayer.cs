@@ -11,6 +11,7 @@ public class CycleLifePlayer : MonoBehaviour
     [SerializeField] float limitShipDie = 8f;
     [SerializeField] GameObject shipPrefabDie;
     [SerializeField] GameObject chestPrefab;
+    [SerializeField] AudioClip audioClip;
 
     List<Vector2> positionsDiePlayer = new List<Vector2>();
 
@@ -39,5 +40,10 @@ public class CycleLifePlayer : MonoBehaviour
         if(positionsDiePlayer.Count > 0)
              Instantiate(chestPrefab, new Vector3(positionsDiePlayer[UnityEngine.Random.Range(0, positionsDiePlayer.Count)].x,
                          positionsDiePlayer[UnityEngine.Random.Range(0, positionsDiePlayer.Count)].y, 0), Quaternion.identity);
+    }
+
+    public void changeMusicThemeMenu() {
+        GetComponent<AudioSource>().clip = audioClip;
+        GetComponent<AudioSource>().Play();
     }
 }

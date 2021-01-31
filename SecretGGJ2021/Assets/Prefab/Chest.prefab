@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8923288186965339934}
   - component: {fileID: 793596417}
   - component: {fileID: 654245535}
+  - component: {fileID: 2238809700717587635}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -50,7 +51,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxValueRandomValueCoin: 2900
   particleSystemCoin: {fileID: 7379224687532168275}
-  audioSource: {fileID: 654245535}
 --- !u!212 &8923288186965339935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -157,7 +157,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0ddf462a5bd5ddd45a810c645d2e9193, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -243,6 +243,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2238809700717587635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923288186965339933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafee280e5f6f6a42a5aa2b626ccfe29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 0ddf462a5bd5ddd45a810c645d2e9193, type: 3}
+  - {fileID: 8300000, guid: 7ac587c694f422f4e952615aaa6b21ec, type: 3}
+  - {fileID: 8300000, guid: 3d19defa3d7b8744987cc1e86a6873af, type: 3}
+  audioSource: {fileID: 654245535}
 --- !u!1001 &2014076490050620969
 PrefabInstance:
   m_ObjectHideFlags: 0

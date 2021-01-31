@@ -7,7 +7,6 @@ public class ChestManager : MonoBehaviour
 {
     [SerializeField] int maxValueRandomValueCoin = 0;
     [SerializeField] ParticleSystem particleSystemCoin;
-    [SerializeField] AudioSource audioSource;
 
     Animator animator;
     bool reclaimedChest;
@@ -34,7 +33,7 @@ public class ChestManager : MonoBehaviour
 
             //generar un efecto de particulas al agarrar el cofre
             particleSystemCoin.Play();
-            audioSource.Play();
+            GetComponent<RandomSound>().changeSoundRandom();
             reclaimedChest = true;
 
             animator.SetBool("Die", true);
@@ -46,11 +45,11 @@ public class ChestManager : MonoBehaviour
             Respawn();
             Destroy(gameObject);
         }
-        else if (collision.CompareTag("Player"))
+        /*else if (collision.CompareTag("Player"))
         {
             Respawn();
             Destroy(gameObject);
-        }
+        }*/
     }
 
     void Respawn()
