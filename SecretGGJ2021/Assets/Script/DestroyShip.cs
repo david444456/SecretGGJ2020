@@ -15,7 +15,7 @@ public class DestroyShip : MonoBehaviour
     [SerializeField] ParticleSystem particleSystemWater;
     [SerializeField] ParticleSystem particleSystemFire;
     [SerializeField] AudioSource audioSource;
-    [SerializeField] AudioClip audioHit;
+    [SerializeField] AudioClip[] audioHit;
     [SerializeField] Slider sliderHealth;
 
     float lastTime = 0;
@@ -51,8 +51,11 @@ public class DestroyShip : MonoBehaviour
             }
             else {
                 //audio hit
-                audioSource.clip = audioHit;
-                audioSource.Play();
+
+                int i = Random.Range(0, audioHit.Length);
+                print(i);
+                audioSource.clip = audioHit[i];
+                audioSource.Play(); 
             }
         }
     }

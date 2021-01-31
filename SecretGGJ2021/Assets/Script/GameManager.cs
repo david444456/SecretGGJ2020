@@ -42,6 +42,7 @@ namespace Ship
             if (coinsToWin < actualCoins) {
                 gameObjectTextWin.SetActive(true);
                 IWIN.Invoke();
+                CycleLifePlayer.cycleLifePlayer.changeMusicWin();
             }
         }
 

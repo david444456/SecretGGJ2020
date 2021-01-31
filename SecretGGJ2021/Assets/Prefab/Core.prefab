@@ -1712,7 +1712,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
+  m_Offset: {x: 0, y: 0.86}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1723,7 +1723,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.71}
+  m_Size: {x: 0.25, y: 0.3}
   m_EdgeRadius: 0
 --- !u!82 &258500871
 AudioSource:
@@ -1949,7 +1949,10 @@ MonoBehaviour:
   particleSystemWater: {fileID: 1569166076490239661}
   particleSystemFire: {fileID: 6918429930999873414}
   audioSource: {fileID: 3506084258551644109}
-  audioHit: {fileID: 8300000, guid: 051755e4d6b94014b98e6bfa90d502db, type: 3}
+  audioHit:
+  - {fileID: 8300000, guid: 653f0326182d8554ead9ca2216fae961, type: 3}
+  - {fileID: 8300000, guid: 9f80d2be7c932f14ab76a4bb71ccd31c, type: 3}
+  - {fileID: 8300000, guid: 902edd701b668a84f9ce32b07e43aa56, type: 3}
   sliderHealth: {fileID: 1131574174}
 --- !u!114 &5376936353626782357
 MonoBehaviour:
@@ -7257,7 +7260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.60949284, b: 0.24875402, a: 1}
+  m_Color: {r: 0.6037736, g: 0.5451525, b: 0.44143826, a: 0.34901962}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7722,7 +7725,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   minimumValueCoins: 1200
-  coinsToWin: 2000
+  coinsToWin: 20000
   textCoin: {fileID: 959855410751372609}
   gameObjectTextWin: {fileID: 3878304753891901635}
   textWin: {fileID: 5403924940671907163}
@@ -8222,6 +8225,14 @@ PrefabInstance:
       value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 4663021939842768390, guid: 5375dc7f846e71b4a81692a089f5c7cf, type: 3}
+      propertyPath: Tesoro.x
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663021939842768390, guid: 5375dc7f846e71b4a81692a089f5c7cf, type: 3}
+      propertyPath: Tesoro.y
+      value: 65.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663021939842768390, guid: 5375dc7f846e71b4a81692a089f5c7cf, type: 3}
       propertyPath: textAyuda
       value: 
       objectReference: {fileID: 4518430767456321617}
@@ -8263,7 +8274,7 @@ PrefabInstance:
       objectReference: {fileID: 3161586754335179087}
     - target: {fileID: 4663021939842768390, guid: 5375dc7f846e71b4a81692a089f5c7cf, type: 3}
       propertyPath: orthographicSizeMainCamera
-      value: 74
+      value: 76.36
       objectReference: {fileID: 0}
     - target: {fileID: 4663021940760574356, guid: 5375dc7f846e71b4a81692a089f5c7cf, type: 3}
       propertyPath: m_camera
@@ -8711,7 +8722,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8704452893136099353, guid: f286dd5103df42743b8cd47d235e884e, type: 3}
       propertyPath: m_Size.y
-      value: 1.71
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704452893136099353, guid: f286dd5103df42743b8cd47d235e884e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 8704452893136099354, guid: f286dd5103df42743b8cd47d235e884e, type: 3}
       propertyPath: m_Size.x

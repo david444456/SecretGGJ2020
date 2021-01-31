@@ -16,6 +16,7 @@ public class RandomSound : MonoBehaviour
     public void changeSoundRandom()
     {
         int i = Random.Range(0, audioClips.Length);
+        print(i);
         audioSource.clip = audioClips[i];
         audioSource.Play();
     }
