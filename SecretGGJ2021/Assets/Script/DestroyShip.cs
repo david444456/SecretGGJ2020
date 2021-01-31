@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class DestroyShip : MonoBehaviour
 {
+    public bool Dead = false;
+
     [SerializeField] GameObject UIRestart;
     [SerializeField] ParticleSystem particleSystemDead;
     [SerializeField] ParticleSystem particleSystemWater;
     [SerializeField] ParticleSystem particleSystemFire;
     [SerializeField] AudioSource audioSource;
 
-    bool oneDead = false;
-
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if ((other.gameObject.tag == "Enemy" || other.gameObject.tag == "Build") && !oneDead)
+        if ((other.gameObject.tag == "Enemy" || other.gameObject.tag == "Build") && !Dead)
         {
-            oneDead = true;
+            Dead = true;
 
             particleSystemDead.Play();
 

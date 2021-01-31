@@ -84,4 +84,8 @@ public class PlayerMovementShip : MonoBehaviour
     public void changeMove() {
         cantMove = true;
     }
+
+    public void changeValueRotation(float newValueRotate) {
+        rotateVelocityShip = newValueRotate;
+    }
 }

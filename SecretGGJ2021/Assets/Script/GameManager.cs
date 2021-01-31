@@ -15,7 +15,8 @@ namespace Ship
 
         [Header("UI")]
         [SerializeField] Text textCoin;
-
+        [SerializeField] GameObject gameObjectTextWin;
+        [SerializeField] Text textWin;
 
         private int actualCoins = 0;
 
@@ -36,6 +37,8 @@ namespace Ship
 
             //win
             if (coinsToWin < actualCoins) {
+                gameObjectTextWin.SetActive(true);
+                textWin.text = "Ganaste crack sos un orgullo";
                 print("Ganaste crack sos un orgullo");
             }
         }
