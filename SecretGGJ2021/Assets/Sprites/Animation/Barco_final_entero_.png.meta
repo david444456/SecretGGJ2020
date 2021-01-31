@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a798cda18821ffc45abcc0659a7d4e5c
+guid: 125cc2fdbfc2d204aa53cb4e52061ee4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1972417861724184409
-    second: Barco_completo_Mesa_de_trabajo_1_0
+      213: 142971334321970846
+    second: Barco_final_entero__0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -130,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Barco_completo_Mesa_de_trabajo_1_0
+      name: Barco_final_entero__0
       rect:
         serializedVersion: 2
-        x: 110
-        y: 264
-        width: 190
-        height: 329
+        x: 129
+        y: 273
+        width: 149
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95f94bc489f6f5b10800000000000000
-      internalID: 1972417861724184409
+      spriteID: e9e135bcbafebf100800000000000000
+      internalID: 142971334321970846
       vertices: []
       indices: 
       edges: []

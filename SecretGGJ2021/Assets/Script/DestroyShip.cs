@@ -1,33 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DestroyShip : MonoBehaviour
 {
     public bool Dead = false;
 
+    public int healthShip = 100;
+
+    [SerializeField] int valueHit = 30;
     [SerializeField] GameObject UIRestart;
     [SerializeField] ParticleSystem particleSystemDead;
     [SerializeField] ParticleSystem particleSystemWater;
     [SerializeField] ParticleSystem particleSystemFire;
     [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip audioHit;
+    [SerializeField] Slider sliderHealth;
+
+    float lastTime = 0;
+
+    private void Start()
+    {
+        sliderHealth.maxValue = healthShip;
+    }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if ((other.gameObject.tag == "Enemy" || other.gameObject.tag == "Build") && !Dead)
+        if ((other.gameObject.tag == "Enemy" || other.gameObject.tag == "Build") && !Dead && healthShip > 0 && lastTime < (Time.time-2.2f))
         {
-            Dead = true;
+            lastTime = Time.time;
+            healthShip -= valueHit;
 
-            particleSystemDead.Play();
+            sliderHealth.value = healthShip;
 
-            //elegir random un efecto de sonido
-            GetComponent<RandomSound>().changeSoundRandom();
+            if (healthShip <= 0)
+            {
+                Dead = true;
 
-            StartCoroutine(FinishLevelDie());
+                particleSystemDead.Play();
 
-            CycleLifePlayer.cycleLifePlayer.newPositionDiePlayer(transform.position);
+                //elegir random un efecto de sonido
+                GetComponent<RandomSound>().changeSoundRandom();
 
-            GetComponent<Animator>().SetBool("Die", true);
+                StartCoroutine(FinishLevelDie());
+
+                CycleLifePlayer.cycleLifePlayer.newPositionDiePlayer(transform.position);
+
+                GetComponent<Animator>().SetBool("Die", true);
+            }
+            else {
+                //audio hit
+                audioSource.clip = audioHit;
+                audioSource.Play();
+            }
         }
     }
 
