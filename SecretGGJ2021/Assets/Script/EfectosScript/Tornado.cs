@@ -11,8 +11,11 @@ public class Tornado : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player" && !other.GetComponent<DestroyShip>().Dead) {
-            other.transform.Rotate(new Vector3(0,0, Random.Range(45, rotatePlayer)));
+            //var
             velocityChangePlayer = Random.Range(velocityChangePlayer / 5, velocityChangePlayer * 5);
+
+            //change player
+            other.transform.Rotate(new Vector3(0, 0, Random.Range(45, rotatePlayer)));
             other.GetComponent<Rigidbody2D>().velocity += new Vector2(velocityChangePlayer, velocityChangePlayer);
 
             //sound

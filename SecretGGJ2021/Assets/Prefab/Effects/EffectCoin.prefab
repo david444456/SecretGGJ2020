@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9050874210805291642}
   - component: {fileID: 7589403502919900303}
   m_Layer: 0
-  m_Name: EffectShipDead 1
+  m_Name: EffectCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1025,7 +1025,7 @@ ParticleSystem:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-      cycleCount: 2
+      cycleCount: 1
       repeatInterval: 0.15
       probability: 1
   SizeModule:

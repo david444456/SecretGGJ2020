@@ -9,12 +9,6 @@ public class SettingsUI : MonoBehaviour
     [SerializeField] GameObject GOSettingsUI;
     [SerializeField] Slider sliderRotate;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void changeStateSettingUI(bool changeBool) {
         GOSettingsUI.SetActive(changeBool);
     }
