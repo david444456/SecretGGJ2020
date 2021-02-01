@@ -17,4 +17,12 @@ public class ChangeScene : MonoBehaviour
     public void sceneMenu() {
         SceneManager.LoadScene(0);
     }
+
+    public void loadSceneByNumber(int numberScene) {
+        SceneManager.LoadScene(numberScene);
+    }
+
+    public void changeMusicThemeByChangeScene() {
+        CycleLifePlayer.cycleLifePlayer.changeMusicThemeMenu();
+    }
 }
