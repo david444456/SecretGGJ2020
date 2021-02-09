@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8923288186965339929}
-  - component: {fileID: 8923288186965339928}
   - component: {fileID: 8923288186965339935}
   - component: {fileID: 8923288186965339934}
   - component: {fileID: 793596417}
   - component: {fileID: 654245535}
   - component: {fileID: 2238809700717587635}
+  - component: {fileID: 866079470669599272}
   m_Layer: 6
   m_Name: Chest
   m_TagString: Untagged
@@ -37,20 +37,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8923288186965339928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8923288186965339933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f87f9247a0237b843af7f623023fd972, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxValueRandomValueCoin: 2900
-  particleSystemCoin: {fileID: 7379224687532168275}
 --- !u!212 &8923288186965339935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -260,6 +246,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7ac587c694f422f4e952615aaa6b21ec, type: 3}
   - {fileID: 8300000, guid: 3d19defa3d7b8744987cc1e86a6873af, type: 3}
   audioSource: {fileID: 654245535}
+--- !u!114 &866079470669599272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923288186965339933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6faafcf6b9a714549a8c67f07b5f0376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValueRandomIntByItem: 22
+  particleSystemItem: {fileID: 7379224687532168275}
+  typeExerciseItem: 0
 --- !u!1001 &2014076490050620969
 PrefabInstance:
   m_ObjectHideFlags: 0

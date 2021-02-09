@@ -7,19 +7,33 @@ public class ChangeScene : MonoBehaviour
 {
     public void Restart()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Credits() {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void sceneMenu() {
+        CycleLifePlayer.cycleLifePlayer.changeMusicPrincipalMenu();
         SceneManager.LoadScene(0);
     }
 
     public void loadSceneByNumber(int numberScene) {
-        SceneManager.LoadScene(numberScene);
+        if (numberScene == 0)
+        {
+            sceneMenu();
+        }
+        else
+        {
+            changeMusicThemeByChangeScene();
+            SceneManager.LoadScene(numberScene);
+
+        }
+    }
+
+    public void loadNextScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void changeMusicThemeByChangeScene() {

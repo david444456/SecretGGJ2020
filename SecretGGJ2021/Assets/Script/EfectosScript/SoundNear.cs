@@ -22,6 +22,10 @@ public class SoundNear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Barco == null) { Barco = GameManager.gameManager.playerShip;
+            return;
+        }
+
         DistanciaXY = Vector3.Distance(Fuego.transform.position, Barco.transform.position);
         VariableDeSonido = (DistanciaXY / EmpiezaElFuego);
 

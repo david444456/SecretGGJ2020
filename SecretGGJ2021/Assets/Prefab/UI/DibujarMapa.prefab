@@ -298,6 +298,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3943582072837885641, guid: 9ccb1a32a5d68854c910f9eb3ae2257a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.48
+      objectReference: {fileID: 0}
     - target: {fileID: 3943582072837885643, guid: 9ccb1a32a5d68854c910f9eb3ae2257a, type: 3}
       propertyPath: Tesoro.x
       value: 85
