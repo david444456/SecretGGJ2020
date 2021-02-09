@@ -14530,7 +14530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotatePlayer: 95
-  velocityChangePlayer: 5
+  maxVelocityChangePlayer: 2
   randomSound: {fileID: 7785621356692719427}
 --- !u!58 &1196314844426634444
 CircleCollider2D:

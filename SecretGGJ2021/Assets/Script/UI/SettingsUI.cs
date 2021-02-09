@@ -11,6 +11,7 @@ public class SettingsUI : MonoBehaviour
 
     public void changeStateSettingUI(bool changeBool) {
         GOSettingsUI.SetActive(changeBool);
+        sliderRotate.value = playerMovementShip.GetValueRotation();
     }
 
     public void ExitToSetting() {

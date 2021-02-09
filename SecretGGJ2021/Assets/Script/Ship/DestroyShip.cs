@@ -36,18 +36,7 @@ public class DestroyShip : MonoBehaviour
 
             if (healthShip <= 0)
             {
-                Dead = true;
-
-                particleSystemDead.Play();
-
-                //elegir random un efecto de sonido
-                GetComponent<RandomSound>().changeSoundRandom();
-
-                StartCoroutine(FinishLevelDie());
-
-                CycleLifePlayer.cycleLifePlayer.newPositionDiePlayer(transform.position);
-
-                GetComponent<Animator>().SetBool("Die", true);
+                LoseLevel();
             }
             else {
                 //audio hit
@@ -57,6 +46,36 @@ public class DestroyShip : MonoBehaviour
                 audioSource.Play(); 
             }
         }
+    }
+
+    public void LoseLevel() {
+        Dead = true;
+
+        particleSystemDead.Play();
+
+        //elegir random un efecto de sonido
+        GetComponent<RandomSound>().changeSoundRandom();
+
+        StartCoroutine(FinishLevelDie());
+
+        CycleLifePlayer.cycleLifePlayer.newPositionDiePlayer(transform.position);
+
+        GetComponent<Animator>().SetBool("Die", true);
+    }
+
+    public void augmentLife(int lifeToAugment) {
+        healthShip += lifeToAugment;
+        if (healthShip >= 100) {
+            healthShip = -(healthShip - 100) + 100;
+        }
+
+        //ui
+        sliderHealth.value = healthShip;
+    }
+
+    public void changeDataShip(int newLife, int newHit) {
+        healthShip = newLife;
+        valueHit = newHit;
     }
 
     IEnumerator FinishLevelDie() {

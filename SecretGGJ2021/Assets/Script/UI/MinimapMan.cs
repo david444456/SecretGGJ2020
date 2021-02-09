@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class MinimapMan : MonoBehaviour
 {
 
-
+    [SerializeField] UnityEvent unityEventReturntoGame;
     [SerializeField] FollowPlayer followPlayer;
     [SerializeField] GameObject PlayerGameObject;
     [SerializeField] float orthographicSizeMainCamera = 20f;
@@ -14,11 +15,12 @@ public class MinimapMan : MonoBehaviour
 
     public Draw_ DrawScript;
 
-    public float TiempoTesoro;
-    public float TiempoDibujando;
+    float TiempoTesoro = 0;
+    float TiempoDibujando = 0;
 
     public GameObject MiniMap;
     public Camera MainCamara;
+    public GameObject CameraAssit;
 
     public Vector3 Tesoro;
     public Vector3 MapPosition;
@@ -32,6 +34,9 @@ public class MinimapMan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        TiempoTesoro= GameManager.gameManager.dataLevel.maxTimeSeeTreasure;
+        TiempoDibujando = GameManager.gameManager.dataLevel.maxTimeDraw;
+
         StartCoroutine("MostrarTesoro");
     }
 
@@ -40,7 +45,7 @@ public class MinimapMan : MonoBehaviour
         //mirar el mapa en grande
         DrawScript.enabled = false;
         PlayerGameObject.SetActive(false);
-        textAyuda.text = " Recorda todo rápido!! ";
+        textAyuda.text = GameManager.gameManager.dataLevel.DrawTextInformation[0];
 
         //la distancia que mira la camara
         float orthographicDefaultCamera = MainCamara.orthographicSize;
@@ -51,14 +56,19 @@ public class MinimapMan : MonoBehaviour
         yield return new WaitForSeconds(TiempoTesoro);
 
         //Tiempo dibujando en el mapa//
-        textAyuda.text = " Dibuja todo lo que te acuerdes!! ";
-        MainCamara.orthographicSize = orthographicDrawMainCamera; 
+        textAyuda.text = GameManager.gameManager.dataLevel.DrawTextInformation[1];
+        CameraAssit.SetActive(true);
+        MainCamara.gameObject.SetActive(false);
+        //MainCamara.orthographicSize = orthographicDrawMainCamera; 
 
         MainCamara.transform.position = MapPosition;
         DrawScript.enabled = true;
         yield return new WaitForSeconds(TiempoDibujando);
 
         //vuelvo a jugar
+        CameraAssit.SetActive(false);
+        MainCamara.gameObject.SetActive(true);
+
         MainCamara.orthographicSize = orthographicDefaultCamera;//default size
         DrawScript.enabled = false;
         MiniMap.SetActive(true);
@@ -68,10 +78,10 @@ public class MinimapMan : MonoBehaviour
         
         followPlayer.enabled = true;
         PlayerGameObject.SetActive(true);
-
+        unityEventReturntoGame.Invoke();
 
         //ultimo text
-        textAyuda.text = " Suerte!!!! ";
+        textAyuda.text = GameManager.gameManager.dataLevel.DrawTextInformation[2];
         yield return new WaitForSeconds(2);
         backGroundTextAyuda.SetActive(false);
     }
