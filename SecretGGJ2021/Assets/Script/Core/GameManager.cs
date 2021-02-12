@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent IWIN;
     public static GameManager gameManager;
     public DataLevels dataLevel;
+    public DataLanguages dataLanguages;
 
     [HideInInspector] public int valueToAddAfterExercise = 0;
     [HideInInspector] public int maxValueHealthShip;
@@ -35,6 +36,9 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         gameManager = this;
+
+        if (CycleLifePlayer.cycleLifePlayer != null)
+            dataLanguages = CycleLifePlayer.cycleLifePlayer.dataLanguages;
     }
 
     void Start()

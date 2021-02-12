@@ -27,10 +27,18 @@ public class DestroyShip : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if ((other.gameObject.tag == "Enemy" || other.gameObject.tag == "Build") && !Dead && healthShip > 0 && lastTime < (Time.time-2.2f))
+        if ((other.gameObject.tag == "Enemy" || other.gameObject.tag == "Build"))
+        {
+            
+            TakeDamage(0);
+        }
+    }
+
+    public void TakeDamage(int damage) {
+        if (!Dead && healthShip > 0 && lastTime < (Time.time - 2.2f))
         {
             lastTime = Time.time;
-            healthShip -= valueHit;
+            healthShip -= valueHit + damage;
 
             sliderHealth.value = healthShip;
 
@@ -38,12 +46,13 @@ public class DestroyShip : MonoBehaviour
             {
                 LoseLevel();
             }
-            else {
+            else
+            {
                 //audio hit
 
                 int i = Random.Range(0, audioHit.Length);
                 audioSource.clip = audioHit[i];
-                audioSource.Play(); 
+                audioSource.Play();
             }
         }
     }

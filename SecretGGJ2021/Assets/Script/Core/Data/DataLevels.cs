@@ -13,5 +13,5 @@ public class DataLevels : ScriptableObject
     [SerializeField] public int maxPointsRepairShip = 0;
     public float maxTimeSeeTreasure = 0;
     public float maxTimeDraw = 0;
-    public string[] DrawTextInformation = null;
+    
 }

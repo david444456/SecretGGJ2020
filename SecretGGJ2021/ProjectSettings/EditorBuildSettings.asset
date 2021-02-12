@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ShipGGJ/Menu.unity
+    path: Assets/Scenes/Menu.unity
     guid: 79d864d022618fb4daadaafe53522f07
   - enabled: 1
     path: Assets/Scenes/ShipGGJ/Credits.unity
@@ -36,6 +36,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 7.unity
     guid: 97e7bc2ba405e1c4e9e6afc69228f47e
   - enabled: 1
-    path: Assets/Scenes/LevelDesign.unity
-    guid: 9464d49eb0f0e204d859124f07122dd6
+    path: Assets/Scenes/Level 8.unity
+    guid: 78bbc264a4a3eb34d8bd1f514e96ebe5
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: d3622eff8745a8a4e88bdef345bef808
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: 8210b7a6be2601840838b09ee83a8f32
+  - enabled: 1
+    path: Assets/Scenes/Level 11.unity
+    guid: d12d34a99d4e4e9488de3a6018912791
   m_configObjects: {}

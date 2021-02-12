@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9778b8cddba83174798d48d4ff7cac4d, type: 3}
+  m_Name: Spanish
+  m_EditorClassIdentifier: 
+  infoExercises:
+  - {fileID: 11400000, guid: 18f35b38137037f4fa38982171a6a555, type: 2}
+  - {fileID: 11400000, guid: db5056b213178b044a646bdd57dc34cc, type: 2}
+  DrawTextInformation:
+  - " \xA1\xA1RECORDA EN DONDE ESTAN LOS COFRES!! "
+  - " \xA1\xA1DIBUJA TODO LO QUE TE ACUERDES!! "
+  - " \xA1\xA1\xA1\xA1SUERTE!!!! "
