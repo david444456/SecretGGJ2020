@@ -716,7 +716,7 @@ MonoBehaviour:
   - {fileID: 7504121775852240218}
   - {fileID: 7504121775443321980}
   - {fileID: 7504121775721713823}
-  CantidadDeTesoros: 13
+  CantidadDeTesoros: 15
   start: 0
 --- !u!1 &7504121777254729846
 GameObject:

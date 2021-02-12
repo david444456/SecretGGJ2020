@@ -45,7 +45,7 @@ public class MinimapMan : MonoBehaviour
         //mirar el mapa en grande
         DrawScript.enabled = false;
         PlayerGameObject.SetActive(false);
-        textAyuda.text = GameManager.gameManager.dataLevel.DrawTextInformation[0];
+        textAyuda.text = GameManager.gameManager.dataLanguages.DrawTextInformation[0];
 
         //la distancia que mira la camara
         float orthographicDefaultCamera = MainCamara.orthographicSize;
@@ -56,7 +56,7 @@ public class MinimapMan : MonoBehaviour
         yield return new WaitForSeconds(TiempoTesoro);
 
         //Tiempo dibujando en el mapa//
-        textAyuda.text = GameManager.gameManager.dataLevel.DrawTextInformation[1];
+        textAyuda.text = GameManager.gameManager.dataLanguages.DrawTextInformation[1];
         CameraAssit.SetActive(true);
         MainCamara.gameObject.SetActive(false);
         //MainCamara.orthographicSize = orthographicDrawMainCamera; 
@@ -81,7 +81,7 @@ public class MinimapMan : MonoBehaviour
         unityEventReturntoGame.Invoke();
 
         //ultimo text
-        textAyuda.text = GameManager.gameManager.dataLevel.DrawTextInformation[2];
+        textAyuda.text = GameManager.gameManager.dataLanguages.DrawTextInformation[2];
         yield return new WaitForSeconds(2);
         backGroundTextAyuda.SetActive(false);
     }

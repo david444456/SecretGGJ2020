@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    [SerializeField] GameObject gameObjectProgress;
+    [SerializeField] Slider sliderProgress;
+
+
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -27,16 +32,32 @@ public class ChangeScene : MonoBehaviour
         else
         {
             changeMusicThemeByChangeScene();
-            SceneManager.LoadScene(numberScene);
+            StartCoroutine(LoadAsyncScene(numberScene));
 
         }
     }
 
     public void loadNextScene() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        changeMusicThemeByChangeScene();
+        StartCoroutine(LoadAsyncScene(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void changeMusicThemeByChangeScene() {
         CycleLifePlayer.cycleLifePlayer.changeMusicThemeMenu();
+    }
+
+    IEnumerator LoadAsyncScene(int sceneIndex) {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+
+        while (!operation.isDone) {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+
+            gameObjectProgress.SetActive(true);
+            sliderProgress.value = progress;
+
+            yield return null;
+        }
+
+
     }
 }

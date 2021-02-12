@@ -9,13 +9,21 @@ public class CycleLifePlayer : MonoBehaviour
     
     public static CycleLifePlayer cycleLifePlayer;
     public int levelActual = 0;
+    public DataLanguages dataLanguages;
 
     [SerializeField] float limitShipDie = 8f;
     [SerializeField] GameObject[] shipGODie;
     [SerializeField] GameObject chestPrefab;
+
+    [Header("Audio")]
     [SerializeField] AudioClip audioClip;
     [SerializeField] AudioClip audioClipWin;
     [SerializeField] AudioClip audioClipMenu;
+
+
+    [Header("Languages")]
+    [SerializeField] DataLanguages spanishData;
+    [SerializeField] DataLanguages englishData;
 
     AudioSource audioSource;
     List<Vector2> positionsDiePlayer = new List<Vector2>();
@@ -41,6 +49,10 @@ public class CycleLifePlayer : MonoBehaviour
         //audio
         audioSource = GetComponent<AudioSource>();
         DontDestroyOnLoad(gameObject);
+
+        //languages
+        string lang = GameMultiLang.Instance.GetLang();
+        changeDataLanguages(lang);
     }
 
 #if UNITY_ANDROID
@@ -78,7 +90,14 @@ public class CycleLifePlayer : MonoBehaviour
                          positionsDiePlayer[UnityEngine.Random.Range(0, positionsDiePlayer.Count)].y, 0), Quaternion.identity);
     }
 
-    //hacer funcion para cuando vuelvo al menu principal
+    public void newLanguages(string newLanguagesString) {
+        changeDataLanguages(newLanguagesString);
+        print(newLanguagesString);
+    }
+
+
+
+    //music and sounds
     public void changeMusicPrincipalMenu() {
         audioSource.Stop();
         audioSource.clip = audioClipMenu;
@@ -105,5 +124,18 @@ public class CycleLifePlayer : MonoBehaviour
 
         audioSource.clip = audioClipWin;
         audioSource.Play();
+    }
+
+
+    private void changeDataLanguages(string lang)
+    {
+        if (lang == "en")
+        {
+            dataLanguages = englishData;
+        }
+        else if (lang == "sp")
+        {
+            dataLanguages = spanishData;
+        }
     }
 }
