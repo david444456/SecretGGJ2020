@@ -5678,6 +5678,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   dataLevel: {fileID: 0}
+  dataLanguages: {fileID: 0}
   valueToAddAfterExercise: 0
   maxValueHealthShip: 0
   playerShip: {fileID: 0}
@@ -5724,7 +5725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a666219bd733e2944856dc58743fa110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRepeatGrunt: 5
+  timeRepeatGrunt: 12
 --- !u!82 &5859253052707869250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6139,6 +6140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7195569088500728683}
     m_Modifications:
+    - target: {fileID: 431424137, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1904266204, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -6147,6 +6152,10 @@ PrefabInstance:
       propertyPath: playerMovementShip
       value: 
       objectReference: {fileID: 959855411747148165}
+    - target: {fileID: 1603070590655930341, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4358638507496242810, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
       propertyPath: m_Name
       value: CanvasControlUI
@@ -6243,6 +6252,34 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5443216944404363770, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443216944404363770, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443216944404363770, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345562800524525933, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345562800524525933, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345562800524525933, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6777944
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345562800524525933, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2946778
+      objectReference: {fileID: 0}
     - target: {fileID: 6535502365965538688, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -6258,6 +6295,10 @@ PrefabInstance:
     - target: {fileID: 6535502365965538688, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808876071916772195, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9012138cf2b7e345b5039d2eecfafb4, type: 3}

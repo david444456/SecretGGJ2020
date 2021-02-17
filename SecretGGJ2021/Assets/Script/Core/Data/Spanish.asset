@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Spanish
   m_EditorClassIdentifier: 
   infoExercises:
-  - {fileID: 11400000, guid: 18f35b38137037f4fa38982171a6a555, type: 2}
-  - {fileID: 11400000, guid: db5056b213178b044a646bdd57dc34cc, type: 2}
+  - {fileID: 11400000, guid: 2d045eedd6fc14f4baeba7f78d812546, type: 2}
+  - {fileID: 11400000, guid: f07d90318c360f2418fb82cd11d2b289, type: 2}
   DrawTextInformation:
   - " \xA1\xA1RECORDA EN DONDE ESTAN LOS COFRES!! "
   - " \xA1\xA1DIBUJA TODO LO QUE TE ACUERDES!! "

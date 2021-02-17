@@ -12,7 +12,7 @@ public class ExerciseMath : MonoBehaviour, IExerciseMath
     public void Start()
     {
         if (CycleLifePlayer.cycleLifePlayer != null)
-            infoExercises = CycleLifePlayer.cycleLifePlayer.dataLanguages.InfoExercises(typeExercise);
+            infoExercises = ControlLevelData.Instance.dataLanguages.InfoExercises(typeExercise);
     }
 
     public void ActiveNewMathProblem(int firstValue, int secondValue, int finalValue)

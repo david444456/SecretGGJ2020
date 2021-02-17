@@ -16,6 +16,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 18f35b38137037f4fa38982171a6a555, type: 2}
   - {fileID: 11400000, guid: db5056b213178b044a646bdd57dc34cc, type: 2}
   DrawTextInformation:
-  - " \xA1\xA1RECORDA EN DONDE ESTAN LOS COFRES!! "
-  - " \xA1\xA1DIBUJA TODO LO QUE TE ACUERDES!! "
-  - " \xA1\xA1\xA1\xA1SUERTE!!!! "
+  - TRY TO REMEMBER THE POSITIONS AND MARK THEM
+  - ' DRAW EVERYTHING YOU REMEMBER!!!! '
+  - GOOD LUCK!!!

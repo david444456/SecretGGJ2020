@@ -14,11 +14,13 @@ namespace ThePed
         public RectTransform textTrans;
         public Text text;
         public TextAsset creditsFile;
+        [SerializeField] GameObject gameObjectUIURL;
 
         public float lineHeight;
         public float yDistance;
         public float scrollSpeed;
         public int maxLinesOnScreen;
+        [SerializeField] int lineByActivatedURLUI = 45;
 
         private WaitForSeconds delayWFS;
         private float y;
@@ -84,9 +86,14 @@ namespace ThePed
                 linesDisplayed++;
 
                 if (linesDisplayed > creditLines.Length)
+                {
                     play = false;
+                }
             }
 
+            if (linesDisplayed > lineByActivatedURLUI) {
+                gameObjectUIURL.SetActive(true);
+            }
             textTrans.anchoredPosition = startingPos + new Vector2(0, y);
         }
 

@@ -28,7 +28,7 @@ public class LangDropDown : MonoBehaviour
 	{
 
         //cyclelifeplayer
-        CycleLifePlayer.cycleLifePlayer.newLanguages(myLangs[index]);
+        ControlLevelData.Instance.newLanguages(myLangs[index]);
 
 
         //load

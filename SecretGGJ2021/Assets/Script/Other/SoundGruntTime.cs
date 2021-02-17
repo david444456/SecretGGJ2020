@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(RandomSound))]
 public class SoundGruntTime : MonoBehaviour
 {
-    [SerializeField] float timeRepeatGrunt = 5;
+    [SerializeField] float timeRepeatGrunt = 12;
 
     RandomSound randomSound;
 
@@ -19,5 +19,8 @@ public class SoundGruntTime : MonoBehaviour
     IEnumerator repeatSoundEverySecond() {
         yield return new WaitForSeconds(timeRepeatGrunt);
         randomSound.changeSoundRandom();
+
+        //repeat cycle
+        StartCoroutine(repeatSoundEverySecond());
     }
 }

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Data:
     textAfterWin:
-    - "\xA1\xA1\xA1INCREIBLE!!!"
-    - "\xA1\xA1\xA1PERFECTO!!!"
+    - UNBELIEVABLE!!!
+    - PERFECT!!!
     textAfterLose:
-    - "\xA1ESE NO ERA! EL RESULTADO ERA: "
-    - ', LA PROXIMA LO HARAS MEJOR, '
-    - 'RECIBES '
-    - ' POR INTENTARLO.'
+    - 'THAT WAS NOT IT! THE RESULT WAS: '
+    - ', NEXT TIME YOU WILL DO BETTER, '
+    - 'RECEIVE '
+    - ' FOR TRYING.'
     newProblemStringFirst:
     - '   + '
     - ' +   '
@@ -30,15 +30,15 @@ MonoBehaviour:
     - ' = '
     - ' =  '
     textInfoUIExercisesFirst:
-    - "SI RECIB\xCD "
-    - "SI TEN\xCDA "
-    - "SI TEN\xCDA "
+    - 'IF I RECEIVED '
+    - 'IF I HAD '
+    - 'IF I HAD '
     textInfoUIExercisesSecond:
-    - ' Y EL RESULTADO ME QUEDA: '
-    - ' Y EL RESULTADO ME QUEDA: '
-    - ' Y ME DIERON '
+    - ' AND NOW I HAVE: '
+    - ' AND NOW I HAVE: '
+    - ' AND I WAS GIVEN '
     textInfoUIExercisesThird:
-    - ", \xBFCU\xC1NTAS MONEDAS TEN\xCDA?"
-    - ", \xBFCU\xC1NTAS MONEDAS RECIB\xCD?"
-    - ", \xBFCU\xC1NTAS MONEDAS VOY A TENER?"
+    - ', HOW MANY COINS DID YOU HAVE?'
+    - ', HOW MANY COINS DID I RECEIVE?'
+    - ', HOW MANY COINS WILL I HAVE?'
   typeExercise: 0
