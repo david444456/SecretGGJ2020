@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Data:
     textAfterWin:
-    - "\xA1\xA1\xA1INCREIBLE!!!"
-    - "\xA1\xA1\xA1PERFECTO!!!"
+    - UNBELIEVABLE!!!
+    - PERFECT!!!
     textAfterLose:
-    - "\xA1ESE NO ERA! EL RESULTADO ERA: "
-    - ', LA PROXIMA LO HARAS MEJOR, '
-    - 'RECIBES '
-    - ' POR INTENTARLO.'
+    - 'THAT WAS NOT IT! THE RESULT WAS: '
+    - ', NEXT TIME YOU WILL DO BETTER, '
+    - 'RECEIVE '
+    - ' FOR TRYING.'
     newProblemStringFirst:
     - '   - '
     - ' -   '
@@ -30,15 +30,15 @@ MonoBehaviour:
     - ' = '
     - ' =   '
     textInfoUIExercisesFirst:
-    - 'REPARASTE '
-    - "SI TEN\xCDA "
-    - "SI TEN\xCDA "
+    - REPAIRED
+    - 'IF I HAD '
+    - 'IF I HAD '
     textInfoUIExercisesSecond:
-    - " DE DA\xD1O, ENTONCES QUEDA: "
-    - " DE DA\xD1O Y LO QUE ME QUEDA REPARAR ES: "
-    - " DE DA\xD1O Y REPARE "
+    - ' DAMAGE, THEN IT REMAINS: '
+    - ' DAMAGE AND WHAT I HAVE LEFT TO REPAIR IS: '
+    - ' OF DAMAGE AND REPAIR '
     textInfoUIExercisesThird:
-    - ", \xBFCU\xC1NTO DA\xD1O TENIA MI BARCO?"
-    - ", \xBFCU\xC1NTO ARREGLE DEL BARCO?"
-    - ", \xBFCU\xC1NTO ES LO QUE ME FALTA REPARAR?"
+    - ', HOW MUCH DAMAGE DID MY BOAT HAVE?'
+    - ', HOW MUCH OF THE BOAT DID YOU FIX?'
+    - ', HOW MUCH DO I STILL NEED TO REPAIR?'
   typeExercise: 1

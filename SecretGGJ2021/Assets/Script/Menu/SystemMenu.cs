@@ -11,13 +11,14 @@ public class SystemMenu : MonoBehaviour
     [SerializeField] Image[] imagesLevels = null;
     [SerializeField] Sprite spriteBackGroundUnlock;
     [SerializeField] ChangeScene changeScene;
+    [SerializeField] DataGeneralLevels[] dataGeneralLevels;
 
     private int valueLevel = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        valueLevel = CycleLifePlayer.cycleLifePlayer.levelActual;
+        valueLevel = ControlLevelData.Instance.levelActual;
     }
 
     public void activeLevelSelectionBackGround(bool boolBackGround) {
@@ -26,6 +27,10 @@ public class SystemMenu : MonoBehaviour
         if (boolBackGround) {
             verifyAllLevelsUnlock();
         }
+    }
+
+    public void SetLevelDifficult(int indexGeneralLevel) {
+        ControlLevelData.Instance.dataGeneralLevels = dataGeneralLevels[indexGeneralLevel];
     }
 
     void verifyAllLevelsUnlock() {

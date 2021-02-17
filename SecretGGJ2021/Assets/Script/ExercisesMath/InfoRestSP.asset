@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e621e2c10333624ba6ac1b68b191a40, type: 3}
+  m_Name: InfoRestSP
+  m_EditorClassIdentifier: 
+  Data:
+    textAfterWin:
+    - "\xA1\xA1\xA1INCREIBLE!!!"
+    - "\xA1\xA1\xA1PERFECTO!!!"
+    textAfterLose:
+    - "\xA1ESE NO ERA! EL RESULTADO ERA: "
+    - ', LA PROXIMA LO HARAS MEJOR, '
+    - 'RECIBES '
+    - ' POR INTENTARLO.'
+    newProblemStringFirst:
+    - '   - '
+    - ' -   '
+    - ' - '
+    newProblemStringSecond:
+    - ' = '
+    - ' = '
+    - ' =   '
+    textInfoUIExercisesFirst:
+    - 'REPARASTE '
+    - "SI TEN\xCDA "
+    - "SI TEN\xCDA "
+    textInfoUIExercisesSecond:
+    - " DE DA\xD1O, ENTONCES QUEDA: "
+    - " DE DA\xD1O Y LO QUE ME QUEDA REPARAR ES: "
+    - " DE DA\xD1O Y REPARE "
+    textInfoUIExercisesThird:
+    - ", \xBFCU\xC1NTO DA\xD1O TENIA MI BARCO?"
+    - ", \xBFCU\xC1NTO ARREGLE DEL BARCO?"
+    - ", \xBFCU\xC1NTO ES LO QUE ME FALTA REPARAR?"
+  typeExercise: 1

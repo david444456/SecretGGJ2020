@@ -37,8 +37,11 @@ public class GameManager : MonoBehaviour
     {
         gameManager = this;
 
-        if (CycleLifePlayer.cycleLifePlayer != null)
-            dataLanguages = CycleLifePlayer.cycleLifePlayer.dataLanguages;
+        if (ControlLevelData.Instance != null)
+        {
+            dataLevel = ControlLevelData.Instance.dataGeneralLevels.dataLevels[SceneManager.GetActiveScene().buildIndex - 2];
+            dataLanguages = ControlLevelData.Instance.dataLanguages;
+        }
     }
 
     void Start()
@@ -81,7 +84,7 @@ public class GameManager : MonoBehaviour
         {
             gameObjectTextWin.SetActive(true);
             IWIN.Invoke();
-            CycleLifePlayer.cycleLifePlayer.changeMusicWin();
+            ControlMusic.Instance.changeMusicWin();
         }
     }
 
@@ -117,10 +120,5 @@ public class GameManager : MonoBehaviour
             destroyShip.LoseLevel();
             print("perder");
         }
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(1);
     }
 }

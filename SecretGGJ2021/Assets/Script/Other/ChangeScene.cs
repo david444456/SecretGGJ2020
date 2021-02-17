@@ -20,7 +20,7 @@ public class ChangeScene : MonoBehaviour
     }
 
     public void sceneMenu() {
-        CycleLifePlayer.cycleLifePlayer.changeMusicPrincipalMenu();
+        ControlMusic.Instance.changeMusicPrincipalMenu();
         SceneManager.LoadScene(0);
     }
 
@@ -43,7 +43,7 @@ public class ChangeScene : MonoBehaviour
     }
 
     public void changeMusicThemeByChangeScene() {
-        CycleLifePlayer.cycleLifePlayer.changeMusicThemeMenu();
+        ControlMusic.Instance.changeMusicThemeMenu();
     }
 
     IEnumerator LoadAsyncScene(int sceneIndex) {
