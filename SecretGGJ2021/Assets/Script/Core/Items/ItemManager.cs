@@ -20,7 +20,7 @@ public abstract class ItemManager : MonoBehaviour
     {
         if (collision.tag == "Player" && !IsRecleimed && !collision.GetComponent<DestroyShip>().Dead)
         {
-            int randomValueForExercises = Random.Range(GameManager.gameManager.GetMinimunValueOfRandomCoin(), maxValueRandomIntByItem);
+            int randomValueForExercises = Random.Range(CoinsManager.Instance.GetMinimunValueOfRandomCoin(), maxValueRandomIntByItem);
 
             playerGetItem(randomValueForExercises, collision.gameObject);
         }

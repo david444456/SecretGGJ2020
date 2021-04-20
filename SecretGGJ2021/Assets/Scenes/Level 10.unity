@@ -2014,6 +2014,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461042813}
     m_Modifications:
+    - target: {fileID: -1610041488046442153, guid: e23e3a02f2d646e4db51b5f3386b4177, type: 3}
+      propertyPath: CollisionPlayer.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1610041488046442153, guid: e23e3a02f2d646e4db51b5f3386b4177, type: 3}
+      propertyPath: CollisionPlayer.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1610041488046442153, guid: e23e3a02f2d646e4db51b5f3386b4177, type: 3}
+      propertyPath: CollisionPlayer.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -1610041488046442153, guid: e23e3a02f2d646e4db51b5f3386b4177, type: 3}
+      propertyPath: CollisionPlayer.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1610041488046442153, guid: e23e3a02f2d646e4db51b5f3386b4177, type: 3}
+      propertyPath: CollisionPlayer.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -1610041488046442153, guid: e23e3a02f2d646e4db51b5f3386b4177, type: 3}
+      propertyPath: CollisionPlayer.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Renderer, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -1610041488046442153, guid: e23e3a02f2d646e4db51b5f3386b4177, type: 3}
+      propertyPath: CollisionPlayer.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7330106600189724603, guid: e23e3a02f2d646e4db51b5f3386b4177, type: 3}
       propertyPath: m_Icon
       value: 
@@ -7607,7 +7635,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 1.9000001, y: 1.9000001, z: 0}
+  m_ChunkCullingBounds: {x: 1.8999999, y: 1.8999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0

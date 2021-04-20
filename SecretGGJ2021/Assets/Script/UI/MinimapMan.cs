@@ -11,7 +11,7 @@ public class MinimapMan : MonoBehaviour
     [SerializeField] FollowPlayer followPlayer;
     [SerializeField] GameObject PlayerGameObject;
     [SerializeField] float orthographicSizeMainCamera = 20f;
-    [SerializeField] float orthographicDrawMainCamera = 15f;
+    //[SerializeField] float orthographicDrawMainCamera = 15f;
 
     public Draw_ DrawScript;
 
@@ -35,8 +35,8 @@ public class MinimapMan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TiempoTesoro= GameManager.gameManager.dataLevel.maxTimeSeeTreasure;
-        TiempoDibujando = GameManager.gameManager.dataLevel.maxTimeDraw;
+        TiempoTesoro= CoinsManager.Instance.dataLevel.maxTimeSeeTreasure;
+        TiempoDibujando = CoinsManager.Instance.dataLevel.maxTimeDraw;
 
 
         orthographicDefaultCamera = MainCamara.orthographicSize;
@@ -49,7 +49,7 @@ public class MinimapMan : MonoBehaviour
         PlayerGameObject.SetActive(false);
 
         //change text help
-        textAyuda.text = GameManager.gameManager.dataLanguages.DrawTextInformation[0];
+        textAyuda.text = CoinsManager.Instance.dataLanguages.DrawTextInformation[0];
 
         //la distancia que mira la camara
         MainCamara.orthographicSize = orthographicSizeMainCamera;
@@ -60,7 +60,7 @@ public class MinimapMan : MonoBehaviour
 
     void DrawInTheMap() {
         //Tiempo dibujando en el mapa//
-        textAyuda.text = GameManager.gameManager.dataLanguages.DrawTextInformation[1]; //text help
+        textAyuda.text = CoinsManager.Instance.dataLanguages.DrawTextInformation[1]; //text help
         CameraAssit.SetActive(true);
         MainCamara.gameObject.SetActive(false);
 
@@ -86,7 +86,7 @@ public class MinimapMan : MonoBehaviour
         unityEventReturntoGame.Invoke();
 
         //ultimo text
-        textAyuda.text = GameManager.gameManager.dataLanguages.DrawTextInformation[2]; 
+        textAyuda.text = CoinsManager.Instance.dataLanguages.DrawTextInformation[2]; 
     }
 
     public IEnumerator MostrarTesoro()

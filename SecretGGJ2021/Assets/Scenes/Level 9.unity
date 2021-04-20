@@ -382,7 +382,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 1.9000001, y: 1.9000001, z: 0}
+  m_ChunkCullingBounds: {x: 1.8999999, y: 1.8999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -20388,7 +20388,7 @@ Transform:
   - {fileID: 537201636}
   - {fileID: 32113910}
   m_Father: {fileID: 1780965223}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &537201635
 PrefabInstance:
@@ -27579,8 +27579,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1663937901}
-  - {fileID: 767169533}
   - {fileID: 461042813}
+  - {fileID: 767169533}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27691,7 +27691,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 1.9000001, y: 1.9000001, z: 0}
+  m_ChunkCullingBounds: {x: 1.8999999, y: 1.8999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
