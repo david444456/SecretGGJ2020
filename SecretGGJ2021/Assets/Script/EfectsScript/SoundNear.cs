@@ -22,7 +22,7 @@ public class SoundNear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Barco == null) { Barco = GameManager.gameManager.playerShip;
+        if (Barco == null) { Barco = CoinsManager.Instance.playerShip;
             return;
         }
 

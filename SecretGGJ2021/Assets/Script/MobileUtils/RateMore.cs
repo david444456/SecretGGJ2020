@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 
 public class RateMore : MonoBehaviour
 {
@@ -60,7 +61,7 @@ public class RateMore : MonoBehaviour
         OnRemoveForeverClick();
 
         // "market" works for android  (iOS: put your app link
-        Application.OpenURL ("market://details?id=com.test.testtest");
+        Application.OpenURL ("market://details?id=com.TidiGames.ShipMath");
 
         
 
@@ -69,7 +70,7 @@ public class RateMore : MonoBehaviour
 	public void More ()
 	{
 		// Android  ,(iOS: put you app store link)
-		Application.OpenURL ("https://play.google.com/store/apps/dev?id=1551996653619230352");
+		Application.OpenURL ("https://play.google.com/store/apps/developer?id=Tidi+Games");
 	}
 
 	public void Feedback ()
@@ -78,7 +79,7 @@ public class RateMore : MonoBehaviour
 	}
 
     public void OpenUrl(string url) {
-        Application.OpenURL(url);
+        Application.OpenURL( url);
     }
 
 }

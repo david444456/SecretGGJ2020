@@ -6,7 +6,7 @@ public class ItemChest : ItemManager
 {
     private void Start()
     {
-        maxValueRandomIntByItem = GameManager.gameManager.dataLevel.maxCoinsTreasure;
+        maxValueRandomIntByItem = CoinsManager.Instance.dataLevel.maxCoinsTreasure;
     }
 
     public override void playerGetItem(int randomValue, GameObject playerShip)
@@ -14,6 +14,6 @@ public class ItemChest : ItemManager
         base.playerGetItem(randomValue, playerShip);
 
         //gamemanager
-        GameManager.gameManager.activeExercisesSum(randomValue);
+        ControlExerciseShip.Instance.activeExercisesSum(randomValue);
     }
 }

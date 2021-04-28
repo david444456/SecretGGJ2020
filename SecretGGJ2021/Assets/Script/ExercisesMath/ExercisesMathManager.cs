@@ -72,7 +72,7 @@ public class ExercisesMathManager : MonoBehaviour
             audioSource.PlayOneShot(clipWin);
 
             //gm
-            GameManager.gameManager.AugmentValueCoins(secondValueExercise);
+            CoinsManager.Instance.AugmentValueCoins(secondValueExercise);
 
             //ui
             textInfoFinalResult.text = dataExercise.Data.textAfterWin[0];
@@ -84,7 +84,7 @@ public class ExercisesMathManager : MonoBehaviour
             audioSource.PlayOneShot(clipWin);
 
             //gm //augment life
-            GameManager.gameManager.AugmentLifePlayer(secondValueExercise);
+            CoinsManager.Instance.AugmentLifePlayer(secondValueExercise);
 
             //
             textInfoFinalResult.text = dataExercise.Data.textAfterWin[1];
@@ -100,13 +100,13 @@ public class ExercisesMathManager : MonoBehaviour
             textInfoFinalResult.text = dataExercise.Data.textAfterLose[0] + solutionActualProblem.ToString() + dataExercise.Data.textAfterLose[1] +
                 dataExercise.Data.textAfterLose[2] + halfPrize + dataExercise.Data.textAfterLose[3];
             if(actualTypeExercise == typeExercise.sum)
-                GameManager.gameManager.AugmentValueCoins(halfPrize);
+                CoinsManager.Instance.AugmentValueCoins(halfPrize);
             else if (actualTypeExercise == typeExercise.rest)
-                GameManager.gameManager.AugmentLifePlayer(halfPrize);
+                CoinsManager.Instance.AugmentLifePlayer(halfPrize);
 
 
             //erros lose
-            GameManager.gameManager.newErrorByPlayer();
+            CoinsManager.Instance.newErrorByPlayer();
         }
 
         //active ui coinsactual

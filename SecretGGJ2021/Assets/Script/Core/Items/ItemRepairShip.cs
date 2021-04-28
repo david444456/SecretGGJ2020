@@ -6,24 +6,24 @@ public class ItemRepairShip : ItemManager
 {
     private void Start()
     {
-        maxValueRandomIntByItem = GameManager.gameManager.dataLevel.maxPointsRepairShip;
+        maxValueRandomIntByItem = CoinsManager.Instance.dataLevel.maxPointsRepairShip;
     }
 
     public override void playerGetItem(int randomValue, GameObject playerShip) {
         base.playerGetItem(randomValue, playerShip);
 
         //repair
-        if ((playerShip.GetComponent<DestroyShip>().healthShip) >= GameManager.gameManager.maxValueHealthShip)
+        if ((playerShip.GetComponent<DestroyShip>().healthShip) >= CoinsManager.Instance.maxValueHealthShip)
         {
             return;
         }
-        else if ((playerShip.GetComponent<DestroyShip>().healthShip + randomValue) > GameManager.gameManager.maxValueHealthShip)
+        else if ((playerShip.GetComponent<DestroyShip>().healthShip + randomValue) > CoinsManager.Instance.maxValueHealthShip)
         {
-            randomValue = -(playerShip.GetComponent<DestroyShip>().healthShip + randomValue - GameManager.gameManager.maxValueHealthShip) + randomValue;
+            randomValue = -(playerShip.GetComponent<DestroyShip>().healthShip + randomValue - CoinsManager.Instance.maxValueHealthShip) + randomValue;
         }
 
         //gamemanager
-        GameManager.gameManager.activeExercisesRest(randomValue);
+        ControlExerciseShip.Instance.activeExercisesRest(randomValue);
 
     }
 }

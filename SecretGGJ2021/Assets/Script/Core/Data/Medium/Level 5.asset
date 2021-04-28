@@ -20,3 +20,4 @@ MonoBehaviour:
   maxPointsRepairShip: 13
   maxTimeSeeTreasure: 8
   maxTimeDraw: 12
+  coinsToReward: 10

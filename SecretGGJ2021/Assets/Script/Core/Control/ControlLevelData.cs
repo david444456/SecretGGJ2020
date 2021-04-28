@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,6 +51,11 @@ public class ControlLevelData : SingletonInInspector<ControlLevelData>
         changeDataLanguages(newLanguagesString);
         print(newLanguagesString);
     }
+    /*
+    public void SetLevelVictoryOnlyInternalTest() {
+        levelActual = 11;
+        PlayerPrefs.SetInt("Level", levelActual);
+    }*/
 
     public void conditionWinLevelSaveData()
     {

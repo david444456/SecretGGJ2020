@@ -67,6 +67,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3619116594324517516}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7330106600189724600}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   damagePlayer: 10
 --- !u!1001 &2192169217129457830
 PrefabInstance:
@@ -178,6 +202,11 @@ Transform:
 --- !u!212 &7330106600189724601 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 8923288186965339935, guid: 904bdb44bbd916741a875eca046f335f, type: 3}
+  m_PrefabInstance: {fileID: 2192169217129457830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &7330106600189724600 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8923288186965339934, guid: 904bdb44bbd916741a875eca046f335f, type: 3}
   m_PrefabInstance: {fileID: 2192169217129457830}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &107523193882035221 stripped

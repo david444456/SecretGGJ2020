@@ -23,7 +23,7 @@ public class ActiveUIExercises : MonoBehaviour
     public void ExitUIExercises() {
         gameObjectUiExercises.SetActive(false);
 
-        GameManager.gameManager.returnTheNormalTime();
+        ControlExerciseShip.Instance.returnTheNormalTime();
 
         //
         exercisesMathManager.checkSolutionActualExercise();
